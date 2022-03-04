@@ -2,6 +2,7 @@
 jaas
 
 ## Application Name
+Student Personal Finance Web App
 
 ## Team Overview
 Jacob Stulgis - jakels19
