@@ -30,4 +30,10 @@ Users will upload their information such as their expenses or income. Then we wi
 ## Sign Up
 
 
-##Dashboard
+## Dashboard
+
+
+## Add Expense
+
+
+## Add Income
