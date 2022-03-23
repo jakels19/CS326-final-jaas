@@ -38,3 +38,4 @@ The dashboard will essentially be the home page for the user. It will contain al
 For this page, we want to ensure we've authenticated the user so they have access to edit. Then, we want to allow the user to enter their expense data into the forms. In this case we would like the user to enter the name of the product, the amount the product was purchased for, the date the product was purchased and the method in which the product was purchased. Lastly, we want the user to click the submit button and send their expense information into our database and redirect the user back to their home dashboard.
 
 ## Add Income
+On this page, users will be able to manually add the amount of their income as well as the date they recieved their income. The income and date will be updated to the main dashboard under the income chart after the users submits its income. The program will ensure that their account is protected and cannot be accessed by a third party account.
