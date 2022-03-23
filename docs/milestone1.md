@@ -22,5 +22,5 @@ Our innovative idea is a Student Personal Finance Web App. There are many versio
 Users will upload their information such as their expenses or income. Then we will store their data in a table with the date it was uploaded. This will make looking at their data easy and clear for the user to view. We will then have running totals of their total expenses during the current month as well as a monthly net income data point that will allow them to see how much leftover income they have left. Also, we will have a recommended savings amount where we will take the monthly net income and deduce how much the user should be saving for that current month. Lastly, we will implement a login/logout system for authenticating users to ensure that each user is receiving their personal data and no information is shared with unauthorized users. We will add visualizations such as pie and bar charts so that the users can understand their assets, expenses and net income more clearly.
 
 ### Part 1
-![](![CS326 Team JAAS Milestone 1 Wireframes@1 25x](https://user-images.githubusercontent.com/61201778/159808643-890768ab-e0ee-405c-8f60-7d9a59e201b4.png)
-)
+(![CS326 Team JAAS Milestone 1 Wireframes@1 25x](https://user-images.githubusercontent.com/61201778/159808643-890768ab-e0ee-405c-8f60-7d9a59e201b4.png)
+
