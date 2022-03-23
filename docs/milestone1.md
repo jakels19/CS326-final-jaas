@@ -34,6 +34,6 @@ Users will upload their information such as their expenses or income. Then we wi
 
 
 ## Add Expense
-
+For this page, we want to ensure we've authenticated the user so they have access to edit. Then, we want to allow the user to enter their expense data into the forms. In this case we would like the user to enter the name of the product, the amount the product was purchased for, the date the product was purchased and the method in which the product was purchased. Lastly, we want the user to click the submit button and send their expense information into our database and redirect the user back to their home dashboard.
 
 ## Add Income
