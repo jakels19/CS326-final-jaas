@@ -24,3 +24,10 @@ Users will upload their information such as their expenses or income. Then we wi
 ### Part 1
 ![CS326 Team JAAS Milestone 1 Wireframes@1 25x](https://user-images.githubusercontent.com/61201778/159808643-890768ab-e0ee-405c-8f60-7d9a59e201b4.png)
 
+## Login
+
+
+## Sign Up
+
+
+##Dashboard
