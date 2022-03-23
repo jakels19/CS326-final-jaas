@@ -28,7 +28,7 @@ Users will upload their information such as their expenses or income. Then we wi
 
 
 ## Sign Up
-
+Users that are not signed up will need to sign up to use the web application. Users need to input their email as well as a chosen password twice, in order to confirm the password they chose.
 
 ## Dashboard
 
