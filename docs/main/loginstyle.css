@@ -1,0 +1,55 @@
+#loginTitle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+lh1
+{
+    font-size: 75px;
+}
+
+lh2
+{
+    font-size: 30px;
+}
+
+#signupHeader{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 75px;
+}
+
+#emailRow
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 35px;
+    margin: 50px 0;
+    color: black;
+}
+#passwordRow
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 65px;
+    font-size: 35px;
+    color: black;
+}
+#button
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+.button
+{
+    background-color: slateblue;
+    color: white;
+    border-radius: 4px;
+    font-size: 20px;
+}
