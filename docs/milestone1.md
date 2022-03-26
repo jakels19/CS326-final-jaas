@@ -45,3 +45,7 @@ For this page, we want to ensure we've authenticated the user so they have acces
 
 ## Add Income
 On this page, users will be able to manually add the amount of their income as well as the date they recieved their income. The income and date will be updated to the main dashboard under the income chart after the users submits its income. The program will ensure that their account is protected and cannot be accessed by a third party account.
+
+## Division of Labor
+
+Jacob Stulgis - Worked on wireframe, html/css for login and dashboard.
