@@ -3,3 +3,47 @@
     align-items: center;
     justify-content: center;
 }
+
+table{
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+  
+td, th{
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+  
+tr:nth-child(even){
+    background-color: #dddddd;
+}
+  
+
+h1{
+    font-size: 50px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h2{
+    font-size: 50px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h3{
+    font-size: 25px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h4{
+    font-size: 15px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: right;
+}
+
+button{
+    background-color: slateblue;
+    color: white;
+}
+
