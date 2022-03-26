@@ -32,6 +32,8 @@ The login page functionality works so that users provide their email and passwor
 
 ## Sign Up
 Users that are not signed up will need to sign up to use the web application. Users need to input their email as well as a chosen password twice, in order to confirm the password they chose. Once users are signed up, they will be redirected back to the login page.
+<img width="623" alt="signupscreenshot" src="https://user-images.githubusercontent.com/68179678/160247595-a799e178-470d-4acd-a053-b02fdf0c6df9.png">
+
 
 ## Dashboard
 The dashboard will essentially be the home page for the user. It will contain all their financial data in an easy to understand table. The dashboard will be split into expenses, income and their balance. Expenses and income will be placed into tables while their balance will be a single value at the bottom of the page. This page also gives the user the ability to add expenses to their expense table as well as additional income to their income table. These buttons will link to the add expense page as well as the add income page. 
