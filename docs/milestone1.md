@@ -26,7 +26,7 @@ Users will upload their information such as their expenses or income. Then we wi
 
 ## Login
 The login page functionality works so that users provide their email and password in the provided textboxes. Once the user has correctly input their email and password, they then click the login button. The click of the login button will then direct the user to the dashboard page. If a user is new and does not have an account, they should click the sign up button. The click of the sign up button will direct the user to the sign up page.
-![login](https://user-images.githubusercontent.com/61201778/160247298-3f848d00-bf1f-4058-a652-7a1f81365092.png)
+![login2](https://user-images.githubusercontent.com/61201778/160247570-06a8920a-15c3-42a4-ab89-431c7c5241f5.png)
 
 
 
