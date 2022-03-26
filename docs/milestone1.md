@@ -50,6 +50,8 @@ On this page, users will be able to manually add the amount of their income as w
 
 ## Division of Labor
 
-Jacob Stulgis - Worked on wireframe, html/css for login and dashboard.
-Abenezer Fesseha - Worked on wireframe, html/css for add expenses page, dashboard
-Aaron Tsui - Worked on wireframe, Worked on HTML and CSS for Sign Up and Dashboard pages.
+**Jacob Stulgis** - Worked on wireframe, html/css for login and dashboard.
+
+**Abenezer Fesseha** - Worked on wireframe, html/css for add expenses page, dashboard
+
+**Aaron Tsui** - Worked on wireframe, Worked on HTML and CSS for Sign Up and Dashboard pages.
