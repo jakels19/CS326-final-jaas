@@ -26,16 +26,29 @@ Users will upload their information such as their expenses or income. Then we wi
 
 ## Login
 The login page functionality works so that users provide their email and password in the provided textboxes. Once the user has correctly input their email and password, they then click the login button. The click of the login button will then direct the user to the dashboard page. If a user is new and does not have an account, they should click the sign up button. The click of the sign up button will direct the user to the sign up page.
+![login2](https://user-images.githubusercontent.com/61201778/160247570-06a8920a-15c3-42a4-ab89-431c7c5241f5.png)
+
+
 
 ## Sign Up
 Users that are not signed up will need to sign up to use the web application. Users need to input their email as well as a chosen password twice, in order to confirm the password they chose. Once users are signed up, they will be redirected back to the login page.
+<img width="623" alt="signupscreenshot" src="https://user-images.githubusercontent.com/68179678/160247595-a799e178-470d-4acd-a053-b02fdf0c6df9.png">
+
 
 ## Dashboard
 The dashboard will essentially be the home page for the user. It will contain all their financial data in an easy to understand table. The dashboard will be split into expenses, income and their balance. Expenses and income will be placed into tables while their balance will be a single value at the bottom of the page. This page also gives the user the ability to add expenses to their expense table as well as additional income to their income table. These buttons will link to the add expense page as well as the add income page. 
+![dashboard](https://user-images.githubusercontent.com/61201778/160247305-63347987-e42e-4c32-87a7-cb9be7249f09.png)
 
 
 ## Add Expense
 For this page, we want to ensure we've authenticated the user so they have access to edit. Then, we want to allow the user to enter their expense data into the forms. In this case we would like the user to enter the name of the product, the amount the product was purchased for, the date the product was purchased and the method in which the product was purchased. Lastly, we want the user to click the submit button and send their expense information into our database and redirect the user back to their home dashboard.
+<img width="599" alt="Screen Shot 2022-03-26 at 11 51 47 AM" src="https://user-images.githubusercontent.com/77024369/160247224-5c3cefae-ea43-46a5-916e-36b0ca37641b.png">
+
 
 ## Add Income
 On this page, users will be able to manually add the amount of their income as well as the date they recieved their income. The income and date will be updated to the main dashboard under the income chart after the users submits its income. The program will ensure that their account is protected and cannot be accessed by a third party account.
+
+## Division of Labor
+
+Jacob Stulgis - Worked on wireframe, html/css for login and dashboard.
+Abenezer Fesseha - Worked on wireframe, html/css for add expenses page, dashboard

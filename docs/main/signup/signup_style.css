@@ -2,6 +2,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 40px;
 }
 
 lh1
@@ -22,6 +24,7 @@ lh2
     font-size: 35px;
     margin: 50px 0;
     color: black;
+    font-family: 'Courier New', Courier, monospace;
 }
 #passwordRow
 {
@@ -31,6 +34,7 @@ lh2
     margin-right: 65px;
     font-size: 35px;
     color: black;
+    font-family: 'Courier New', Courier, monospace;
 }
 #confirmPassword
 {
@@ -40,6 +44,7 @@ lh2
     margin-right: 65px;
     font-size: 35px;
     color: black;
+    font-family: 'Courier New', Courier, monospace;
 }
 #button
 {
@@ -54,6 +59,7 @@ lh2
     color: white;
     border-radius: 4px;
     font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
 }
 .button:hover
 {
