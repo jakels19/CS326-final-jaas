@@ -60,4 +60,4 @@ On this page, users will be able to manually add the amount of their income as w
 
 **Aaron Tsui** - Worked on wireframe, Worked on HTML and CSS for Sign Up and Dashboard pages.
 
-**Shaham Zahir - Worked on wireframe, HTML and CSS for add income page and dashboard
+Shaham Zahir - Worked on wireframe, HTML and CSS for add income page and dashboard
