@@ -47,6 +47,8 @@ For this page, we want to ensure we've authenticated the user so they have acces
 
 ## Add Income
 On this page, users will be able to manually add the amount of their income as well as the date they recieved their income. The income and date will be updated to the main dashboard under the income chart after the users submits its income. The program will ensure that their account is protected and cannot be accessed by a third party account.
+![Screenshot 2022-03-26 at 8 42 42 PM](https://user-images.githubusercontent.com/43796437/160261758-5fdc830e-259f-44f3-afc9-9b0998b2a538.png)
+
 
 ## Division of Labor
 
@@ -55,3 +57,5 @@ On this page, users will be able to manually add the amount of their income as w
 **Abenezer Fesseha** - Worked on wireframe, html/css for add expenses page, dashboard
 
 **Aaron Tsui** - Worked on wireframe, Worked on HTML and CSS for Sign Up and Dashboard pages.
+
+**Shaham Zahir - Worked on wireframe, HTML and CSS for add income page and dashboard
