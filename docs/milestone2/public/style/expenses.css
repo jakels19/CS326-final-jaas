@@ -1,0 +1,54 @@
+#title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 115px;
+}
+h1{
+    font-size: 50px;
+    font-family: 'Courier New', Courier, monospace;
+    /* margin-left: 600px;
+    margin-top: 100px; */
+}
+h3{
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+}
+#firstRow{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#secondRow{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.product{
+    float: left;
+    margin-right: 65px;
+}
+.date{
+    float: left;
+    margin-right: 50px;
+}
+.price{
+    float: left;
+    margin-left: 75px;
+}
+.method{
+    float: left;
+    margin-left: 120px;
+}
+#button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 100px;
+}
+.button{
+    background-color: blue;
+    color: white;
+    border-radius: 4px;
+    font-size: 20px;
+}

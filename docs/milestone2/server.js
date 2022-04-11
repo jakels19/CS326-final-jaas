@@ -20,9 +20,13 @@ app.get('/signUp', (req,res) =>{
 });
 
 app.post('/addExpense', (req,res) =>{
-
+    // res.render("expenses.html");
 });
 
 app.post('/addIncome', (req,res) => {
 
 });
+
+app.listen(process.env.PORT || PORT, () => {
+    console.log(`Server running on port ${PORT}`)
+})
