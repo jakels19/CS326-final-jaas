@@ -19,8 +19,20 @@ app.get('/signUp', (req,res) =>{
 
 });
 
+app.get('/addExpense', (req,res) =>{
+// res.sendFile("./public/html/expenses.html");
+});
+
+app.get('/addIncome', (req,res) =>{
+
+});
+
+app.post('/signUp', (req,res) => {
+// sends fake user data to db
+});
+
 app.post('/addExpense', (req,res) =>{
-    // res.render("expenses.html");
+    // needs to send dummy data to server using faker-js
 });
 
 app.post('/addIncome', (req,res) => {
