@@ -1,13 +1,16 @@
 const express = require("express");
-const faker = require("faker");
+const {faker} = require("@faker-js/faker");
 const app = express();
 
 app.use(express.static('public'));
 app.use(express.urlencoded({extended:true}));
 app.use(express.json());
 
-app.get('/login', (req,res) => {
-
+app.post('/login', (req,res) => {
+// send fake user data to database
+let randomUsername = faker.internet.userName(); // random user name
+let randomPassword = faker.internet.password(); // random password
+res.send(`Username: ${randomUsername} Password: ${randomPassword}`); //responds by showing username and password
 });
 
 
