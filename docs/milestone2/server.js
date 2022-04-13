@@ -9,13 +9,16 @@ app.use(express.json());
 
 let randomUsername = faker.internet.userName(); // random userName global
 let randomPassword = faker.internet.password(); // random password global
-app.post('/login', (req,res) => {
+/*app.post('/login', (req,res) => {
 // send fake user data to database
+res.render('login.html')
 res.send(`Username: ${randomUsername} Password: ${randomPassword}`); //responds by showing username and password
-});
+});*/
 
 app.get('/login', (req,res) =>{
-
+res.sendFile('.\public\login.html');
+//res.render('login.html')
+//res.send(`Username: ${randomUsername} Password: ${randomPassword}`); //responds by showing username and password
 });
 
 
@@ -47,6 +50,4 @@ app.post('/addIncome', (req,res) => {
 
 });
 
-app.listen(process.env.PORT || PORT, () => {
-    console.log(`Server running on port ${PORT}`)
-})
+app.listen(3000)
