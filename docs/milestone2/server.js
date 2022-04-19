@@ -64,7 +64,7 @@ app.get('/addExpense', checkNotAuthenticated, (req,res) =>{
 });
 
 app.get('/addIncome', (req,res) =>{
-
+    res.render('income.ejs'); 
 });
 
 app.post('/signUp', checkNotAuthenticated, (req,res) => {
@@ -79,7 +79,8 @@ app.post('/addExpense', checkNotAuthenticated, (req,res) =>{
 });
 
 app.post('/addIncome', (req,res) => {
-
+    console.log(JSON.stringify(randomUsername),JSON.stringify(randomDate),JSON.stringify(randomNum)); 
+    res.redirect('/'); 
 });
 
 app.delete('/logout', (req, res) => {
