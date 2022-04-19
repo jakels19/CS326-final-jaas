@@ -35,6 +35,8 @@ initializePassport(
 
 let randomUsername = faker.internet.userName(); // random userName global
 let randomPassword = faker.internet.password(); // random password global
+let randomDate = faker.internet.randomDate();
+let randomNum = Math.floor(Math.random() * 1000);
 const users = [];
 
 app.post('/login', checkNotAuthenticated, passport.authenticate('local', {
@@ -49,16 +51,16 @@ res.render('login.ejs');
 });
 
 
-app.get('/dashboard', (req,res) =>{
-
+app.get('/dashboard', checkNotAuthenticated, (req,res) =>{
+    res.render('dashboard.ejs');
 });
 
 app.get('/signUp', checkNotAuthenticated, (req,res) =>{
 
 });
 
-app.get('/addExpense', (req,res) =>{
-// res.sendFile("./public/html/expenses.html");
+app.get('/addExpense', checkNotAuthenticated, (req,res) =>{
+    res.render('expense.ejs');
 });
 
 app.get('/addIncome', (req,res) =>{
@@ -69,8 +71,9 @@ app.post('/signUp', checkNotAuthenticated, (req,res) => {
 // sends fake user data to db
 });
 
-app.post('/addExpense', (req,res) =>{
-    // needs to send dummy data to server using faker-js
+app.post('/addExpense', checkNotAuthenticated, (req,res) =>{
+    console.log(JSON.stringify(randomUsername),JSON.stringify(randomDate),JSON.stringify(randomNum));
+    res.redirect('/');
 });
 
 app.post('/addIncome', (req,res) => {
