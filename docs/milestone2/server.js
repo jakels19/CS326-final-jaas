@@ -59,11 +59,11 @@ app.get('/signUp', checkNotAuthenticated, (req,res) =>{
     res.render('signup.ejs');
 });
 
-app.get('/addExpense', checkNotAuthenticated, (req,res) =>{
+app.get('/addExpense', checkAuthenticated, (req,res) =>{
     res.render('expense.ejs');
 });
 
-app.get('/addIncome', (req,res) =>{
+app.get('/addIncome', checkAuthenticated, (req,res) =>{
     res.render('income.ejs'); 
 });
 
