@@ -69,6 +69,8 @@ app.get('/addIncome', (req,res) =>{
 
 app.post('/signUp', checkNotAuthenticated, (req,res) => {
     // sends fake user data to db
+    console.log(JSON.stringify(randomUsername),JSON.stringify(randomPassword));
+    res.redirect('/login');
 });
 
 app.post('/addExpense', checkNotAuthenticated, (req,res) =>{
