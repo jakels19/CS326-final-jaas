@@ -56,7 +56,7 @@ app.get('/dashboard', checkNotAuthenticated, (req,res) =>{
 });
 
 app.get('/signUp', checkNotAuthenticated, (req,res) =>{
-    res.render('signup.ejs')
+    res.render('signup.ejs');
 });
 
 app.get('/addExpense', checkNotAuthenticated, (req,res) =>{
