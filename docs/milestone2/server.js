@@ -47,7 +47,7 @@ app.post('/login', checkNotAuthenticated, passport.authenticate('local', {
 }));
 
 app.get('/login', checkNotAuthenticated, (req,res) =>{
-res.render('login.ejs');
+    res.render('login.ejs');
 });
 
 
@@ -68,7 +68,7 @@ app.get('/addIncome', (req,res) =>{
 });
 
 app.post('/signUp', checkNotAuthenticated, (req,res) => {
-// sends fake user data to db
+    // sends fake user data to db
 });
 
 app.post('/addExpense', checkNotAuthenticated, (req,res) =>{
