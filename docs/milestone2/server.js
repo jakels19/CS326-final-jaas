@@ -73,15 +73,19 @@ app.post('/signUp', checkNotAuthenticated, (req,res) => {
     res.redirect('/login');
 });
 
-app.post('/addExpense', checkNotAuthenticated, (req,res) =>{
+app.post('/addExpense', checkAuthenticated, (req,res) =>{
     console.log(JSON.stringify(randomUsername),JSON.stringify(randomDate),JSON.stringify(randomNum));
     res.redirect('/');
 });
 
-app.post('/addIncome', (req,res) => {
+app.post('/addIncome', checkAuthenticated, (req,res) => {
     console.log(JSON.stringify(randomUsername),JSON.stringify(randomDate),JSON.stringify(randomNum)); 
     res.redirect('/'); 
 });
+
+app.delete('/removeExpense', checkAuthenticated, (req,res) => {
+    console.log('item deleted');
+})
 
 app.delete('/logout', (req, res) => {
     req.logOut();
