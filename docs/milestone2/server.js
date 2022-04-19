@@ -85,6 +85,7 @@ app.post('/addIncome', checkAuthenticated, (req,res) => {
 
 app.delete('/removeExpense', checkAuthenticated, (req,res) => {
     console.log('item deleted');
+    res.redirect('/');
 })
 
 app.delete('/logout', (req, res) => {
