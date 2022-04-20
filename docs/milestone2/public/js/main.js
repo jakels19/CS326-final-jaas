@@ -1,12 +1,16 @@
 async function createExpense(){
-    
+
 }
 
 async function createIncome(){
 
 }
 
-async function read(){
+async function fetchIncome(){
+
+}
+
+async function fetchExpense(){
 
 }
 
