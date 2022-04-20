@@ -77,21 +77,21 @@ app.post('/signUp', checkNotAuthenticated, (req,res) => {
 
 app.post('/addExpense', checkAuthenticated, (req,res) =>{
     let postUserName = JSON.stringify(randomUsername);
-    let postDate = JSON.stringify(randomDate);
+    //let postDate = JSON.stringify(randomDate);
     let postNum = JSON.stringify(randomNum);
-    console.log(postUserName, postDate, postNum);
+    console.log(postUserName, postNum);
     res.redirect('/');
 });
 
 app.post('/addIncome', checkAuthenticated, (req,res) => {
     let postUserName =  JSON.stringify(randomUsername);
-    let postDate =  JSON.stringify(randomDate);
+    //let postDate =  JSON.stringify(randomDate);
     let postNum = JSON.stringify(randomNum); 
-    console.log(postUserName, postDate, postNum);
+    console.log(postUserName,postNum);
     res.redirect('/'); 
 });
 
-app.put()
+// app.put()
 
 app.delete('/removeExpense', checkAuthenticated, (req,res) => {
     console.log('item deleted');
