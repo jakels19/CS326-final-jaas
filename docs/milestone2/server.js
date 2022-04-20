@@ -39,6 +39,10 @@ let fakerObj = [{
     date: faker.date.future()
 }];
 
+let username = faker.internet.userName();
+let password = faker.internet.password();
+let date = faker.date.future();
+
 // let randomUsername = faker.internet.userName(); // random userName global
 // let randomPassword = faker.internet.password(); // random password global
 // let randomDate = faker.date.randomDate(); 
@@ -54,6 +58,8 @@ app.post('/login', checkNotAuthenticated, passport.authenticate('local', {
 
 app.get('/', checkNotAuthenticated, (req,res) =>{
     res.render('login.ejs');
+    console.log(username);
+    console.log(password);
 });
 
 
@@ -63,14 +69,18 @@ app.get('/dashboard', checkNotAuthenticated, (req,res) =>{
 
 app.get('/signUp', checkNotAuthenticated, (req,res) =>{
     res.render('signup.ejs');
+    console.log(username);
+    console.log(password);
 });
 
 app.get('/addExpense', checkNotAuthenticated, (req,res) =>{
     res.render('expense.ejs');
+    console.log(date)
 });
 
 app.get('/addIncome', checkNotAuthenticated, (req,res) =>{
     res.render('income.ejs'); 
+    console.log(date)
 });
 
 app.post('/signUp', checkNotAuthenticated, (req,res) => {
