@@ -56,7 +56,7 @@ app.post('/login', checkNotAuthenticated, passport.authenticate('local', {
 
 }));
 
-app.get('/', checkNotAuthenticated, (req,res) =>{
+app.get('/', (req,res) =>{
     res.render('login.ejs');
     console.log(username);
     console.log(password);
