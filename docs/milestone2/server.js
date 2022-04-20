@@ -50,7 +50,7 @@ app.post('/login', checkNotAuthenticated, passport.authenticate('local', {
 
 }));
 
-app.get('/login', checkNotAuthenticated, (req,res) =>{
+app.get('/', checkNotAuthenticated, (req,res) =>{
     res.render('login.ejs');
 });
 
@@ -63,11 +63,11 @@ app.get('/signUp', checkNotAuthenticated, (req,res) =>{
     res.render('signup.ejs');
 });
 
-app.get('/addExpense', checkAuthenticated, (req,res) =>{
+app.get('/addExpense', checkNotAuthenticated, (req,res) =>{
     res.render('expense.ejs');
 });
 
-app.get('/addIncome', checkAuthenticated, (req,res) =>{
+app.get('/addIncome', checkNotAuthenticated, (req,res) =>{
     res.render('income.ejs'); 
 });
 
@@ -76,7 +76,7 @@ app.post('/signUp', checkNotAuthenticated, (req,res) => {
     return JSON.stringify(fakerObj);
 });
 
-app.post('/addExpense', checkAuthenticated, (req,res) =>{
+app.post('/addExpense', checkNotAuthenticated, (req,res) =>{
     return JSON.stringify(fakerObj);
 });
 
