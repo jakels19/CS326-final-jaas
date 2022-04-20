@@ -35,7 +35,7 @@ initializePassport(
 
 let randomUsername = faker.internet.userName(); // random userName global
 let randomPassword = faker.internet.password(); // random password global
-let randomDate = faker.internet.randomDate();
+// let randomDate = faker.date.randomDate(); 
 let randomNum = Math.floor(Math.random() * 1000);
 const users = [];
 
@@ -90,6 +90,8 @@ app.post('/addIncome', checkAuthenticated, (req,res) => {
     console.log(postUserName, postDate, postNum);
     res.redirect('/'); 
 });
+
+app.put()
 
 app.delete('/removeExpense', checkAuthenticated, (req,res) => {
     console.log('item deleted');
