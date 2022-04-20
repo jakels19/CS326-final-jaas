@@ -1,3 +1,19 @@
+async function createExpense(){
+
+}
+
+async function createIncome(){
+
+}
+
+async function fetchIncome(){
+
+}
+
+async function fetchExpense(){
+
+}
+
 async function updateIncome(){
 
 }
