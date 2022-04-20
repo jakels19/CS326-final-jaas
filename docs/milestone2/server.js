@@ -33,10 +33,14 @@ initializePassport(
     id => users.find(user => user.id === id)
 );
 
-let randomUsername = faker.internet.userName(); // random userName global
-let randomPassword = faker.internet.password(); // random password global
+let fakerObj = {
+    'randomUsername':faker.internet.userName(),
+    'randomPassword': faker.internet.password()
+}
+// let randomUsername = faker.internet.userName(); // random userName global
+// let randomPassword = faker.internet.password(); // random password global
 // let randomDate = faker.date.randomDate(); 
-let randomNum = Math.floor(Math.random() * 1000);
+// let randomNum = Math.floor(Math.random() * 1000);
 const users = [];
 
 app.post('/login', checkNotAuthenticated, passport.authenticate('local', {
@@ -69,10 +73,7 @@ app.get('/addIncome', checkAuthenticated, (req,res) =>{
 
 app.post('/signUp', checkNotAuthenticated, (req,res) => {
     // sends fake user data to db
-    let postUserName = JSON.stringify(randomUsername);
-    let postPassword = JSON.stringify(randomPassword);
-    console.log(postUserName, postPassword);
-    res.redirect('/login');
+    return JSON.stringify(fakerObj);
 });
 
 app.post('/addExpense', checkAuthenticated, (req,res) =>{
@@ -91,7 +92,7 @@ app.post('/addIncome', checkAuthenticated, (req,res) => {
     res.redirect('/'); 
 });
 
-// app.put()
+//app.put()
 
 app.delete('/removeExpense', checkAuthenticated, (req,res) => {
     console.log('item deleted');
