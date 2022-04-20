@@ -33,10 +33,12 @@ initializePassport(
     id => users.find(user => user.id === id)
 );
 
-let fakerObj = {
-    'randomUsername':faker.internet.userName(),
-    'randomPassword': faker.internet.password()
-}
+let fakerObj = [{
+    username:faker.internet.userName(),
+    password: faker.internet.password(),
+    date: faker.date.future()
+}];
+
 // let randomUsername = faker.internet.userName(); // random userName global
 // let randomPassword = faker.internet.password(); // random password global
 // let randomDate = faker.date.randomDate(); 
@@ -114,4 +116,4 @@ function checkNotAuthenticated(req, res, next){
     }
     next();
 }
-app.listen(3000)
+app.listen(8000)
