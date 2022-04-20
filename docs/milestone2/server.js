@@ -65,6 +65,7 @@ app.get('/', (req,res) =>{
 
 app.get('/dashboard', checkNotAuthenticated, (req,res) =>{
     res.render('dashboard.ejs');
+    console.log(date);
 });
 
 app.get('/signUp', checkNotAuthenticated, (req,res) =>{
@@ -75,12 +76,12 @@ app.get('/signUp', checkNotAuthenticated, (req,res) =>{
 
 app.get('/addExpense', checkNotAuthenticated, (req,res) =>{
     res.render('expense.ejs');
-    console.log(date)
+    console.log(date);
 });
 
 app.get('/addIncome', checkNotAuthenticated, (req,res) =>{
     res.render('income.ejs'); 
-    console.log(date)
+    console.log(date);
 });
 
 app.post('/signUp', checkNotAuthenticated, (req,res) => {
