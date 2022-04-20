@@ -11,7 +11,9 @@ async function fetchIncome(){
 }
 
 async function fetchExpense(){
-
+    const response = await fetch('/addExpense')
+    const data = response.json()
+    console.log(data);
 }
 
 async function updateIncome(){

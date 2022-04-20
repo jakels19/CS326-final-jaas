@@ -77,11 +77,7 @@ app.post('/signUp', checkNotAuthenticated, (req,res) => {
 });
 
 app.post('/addExpense', checkAuthenticated, (req,res) =>{
-    let postUserName = JSON.stringify(randomUsername);
-    //let postDate = JSON.stringify(randomDate);
-    let postNum = JSON.stringify(randomNum);
-    console.log(postUserName, postNum);
-    res.redirect('/');
+    return JSON.stringify(fakerObj);
 });
 
 app.post('/addIncome', checkAuthenticated, (req,res) => {
