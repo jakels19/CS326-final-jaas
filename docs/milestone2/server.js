@@ -69,17 +69,25 @@ app.get('/addIncome', checkAuthenticated, (req,res) =>{
 
 app.post('/signUp', checkNotAuthenticated, (req,res) => {
     // sends fake user data to db
-    console.log(JSON.stringify(randomUsername),JSON.stringify(randomPassword));
+    let postUserName = JSON.stringify(randomUsername);
+    let postPassword = JSON.stringify(randomPassword);
+    console.log(postUserName, postPassword);
     res.redirect('/login');
 });
 
 app.post('/addExpense', checkAuthenticated, (req,res) =>{
-    console.log(JSON.stringify(randomUsername),JSON.stringify(randomDate),JSON.stringify(randomNum));
+    let postUserName = JSON.stringify(randomUsername);
+    let postDate = JSON.stringify(randomDate);
+    let postNum = JSON.stringify(randomNum);
+    console.log(postUserName, postDate, postNum);
     res.redirect('/');
 });
 
 app.post('/addIncome', checkAuthenticated, (req,res) => {
-    console.log(JSON.stringify(randomUsername),JSON.stringify(randomDate),JSON.stringify(randomNum)); 
+    let postUserName =  JSON.stringify(randomUsername);
+    let postDate =  JSON.stringify(randomDate);
+    let postNum = JSON.stringify(randomNum); 
+    console.log(postUserName, postDate, postNum);
     res.redirect('/'); 
 });
 
