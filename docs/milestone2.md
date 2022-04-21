@@ -4,6 +4,24 @@
 
 Each frame has the corresponding URL in its header. Our frames are taken from our Milestone1, part 1 solution. 
 
+### 1:
+/ - Faker data of username and password and renders the login page, authentication is implemented for login
+
+/signup - Faker data of username and password and renders the signup page
+
+/addExpense - Faker data of date and renders the expense page
+
+/addIncome - Faker data of date and renders the income page
+
+/dashboard - Faker data of date and renders the dashboard
+
+### 2:
+
+
+
+### Part 3: Heroku Link
+
+https://milestone2-326.herokuapp.com/
 
 ## Division of Labor
 
@@ -13,4 +31,4 @@ Each frame has the corresponding URL in its header. Our frames are taken from ou
 
 **Aaron Tsui** - 
 
-Shaham Zahir - 
+**Shaham Zahir** - 

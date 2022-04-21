@@ -113,6 +113,11 @@ app.delete('/removeExpense', checkAuthenticated, (req,res) => {
     res.redirect('/');
 })
 
+app.delete('/removeIncome',checkAuthenticated,(req,res) =>{
+    console.log('income deleted');
+    res.redirect('/'); 
+})
+
 app.delete('/logout', (req, res) => {
     req.logOut();
     res.redirect('/login');
