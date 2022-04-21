@@ -40,6 +40,6 @@ Unsolvable Heroku deployment problems
 
 **Abenezer Fesseha** - 
 
-**Aaron Tsui** - 
+**Aaron Tsui** - Worked on and completed signup features with ejs, completed signup endpts, Troubleshooted port and deploying problems
 
 **Shaham Zahir** - 
