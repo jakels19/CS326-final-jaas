@@ -6,7 +6,7 @@
 
 Each frame has the corresponding URL in its header. Our frames are taken from our Milestone1, part 1 solution. 
 
-### 1:
+### Part 1:
 / - Faker data of username and password and renders the login page, authentication is implemented for login
 
 /signup - Faker data of username and password and renders the signup page
@@ -17,7 +17,7 @@ Each frame has the corresponding URL in its header. Our frames are taken from ou
 
 /dashboard - Faker data of date and renders the dashboard
 
-### 2:
+### Part 2:
 
 ![income2](https://user-images.githubusercontent.com/61201778/164344522-830e3bf4-c052-46ef-ae92-710fe40dc05d.png)
 Update, delete for income will be implemented in the next milestone
