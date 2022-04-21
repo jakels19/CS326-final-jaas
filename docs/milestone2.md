@@ -42,4 +42,4 @@ Unsolvable Heroku deployment problems (Unknown application crashing)
 
 **Aaron Tsui** - Worked on and completed signup features with ejs, completed signup endpts, Troubleshooted port and deploying problems
 
-**Shaham Zahir** - Worked on the server, income features with ejs, and various errors we came across using Heroku
+**Shaham Zahir** - Worked on the server and  income features with ejs 
