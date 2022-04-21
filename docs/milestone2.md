@@ -36,7 +36,7 @@ Unsolvable Heroku deployment problems (Unknown application crashing)
 
 ## Division of Labor
 
-**Jacob Stulgis** - 
+**Jacob Stulgis** - Login endpoints, login authentication, login render of ejs and fake data. Helped work on Heroku, but ultimatley ran into errors.
 
 **Abenezer Fesseha** - 
 
