@@ -100,6 +100,11 @@ app.post('/addIncome', checkAuthenticated, (req,res) => {
     res.redirect('/'); 
 });
 
+app.put('/updateExpense', (req,res) =>{
+    console.log('item updated');
+    res.redirect('/');
+})
+
 //app.put()
 
 app.delete('/removeExpense', checkAuthenticated, (req,res) => {
