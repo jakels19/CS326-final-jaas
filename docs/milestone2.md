@@ -32,7 +32,7 @@ Create
 https://milestone2-326.herokuapp.com/
 
 ### Things to complete
-Unsolvable Heroku deployment problems
+Unsolvable Heroku deployment problems (Unknown application crashing)
 
 ## Division of Labor
 
