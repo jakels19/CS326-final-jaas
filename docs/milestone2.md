@@ -38,7 +38,7 @@ Unsolvable Heroku deployment problems (Unknown application crashing)
 
 **Jacob Stulgis** - Login endpoints, login authentication, login render of ejs and fake data. Helped work on Heroku, but ultimatley ran into errors.
 
-**Abenezer Fesseha** - 
+**Abenezer Fesseha** - Expenses and dashboard endpoints, ejs for dashboard and expenses, implemented fake data. Deployed heroku app but had errors.
 
 **Aaron Tsui** - Worked on and completed signup features with ejs, completed signup endpts, Troubleshooted port and deploying problems
 
