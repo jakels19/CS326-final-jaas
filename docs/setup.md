@@ -1,4 +1,4 @@
-This script will run the server/index.js file. You can run this script by typing the following in the command line:
+This script will run the milestone2/server.js file. You can run this script by typing the following in the command line:
 
 ## npm start
 
