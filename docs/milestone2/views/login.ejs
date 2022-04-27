@@ -1,40 +1,31 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Login Page</title>
-        <link rel="stylesheet" type="text/css" href="style/login_style.css">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    </head>
-    <body>
-        <div id="loginTitle">
-            <lh1>Student Personal Finance</lh1>
-        </div>
-        
+<div id="loginTitle">
+    <lh1>Student Personal Finance</lh1>
+</div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" type="text/css" href="style/login_style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<form action="/login" method="POST">
+    <body>        
         <div id="emailRow">
-            <p class="emailLogin">Email: </p>
-            <form>
-                <input type="text" placeholder="Enter Email" name="loginEmail">
-            </form>
+            <p class="usernameLogin">Username: </p>
+            <input type="text" placeholder="Enter Username" name="username" id="username">
         </div>
 
         <div id="passwordRow">
             <p class="passwordLogin">Password: </p>
-            <form>
-                <input type="text" placeholder="Enter Password" name="loginPassword">
-            </form>
+            <input type="text" placeholder="Enter Password" name="password" id="password">
         </div>
 
         <div id="button">
             <button class="button">Login</button>
         </div>
-
-        <div id="signupHeader">
-            <lh2>Don't have an account yet?</lh2>
-            <lh2><a href="/signup"> Click Here!</a></lh2>
-        </div>
     </body>
-</html>
+</form>
+<div id="signupHeader">
+    <lh2>Don't have an account yet?</lh2>
+    <lh2><a href="/signup"> Click Here!</a></lh2>
+</div>

@@ -16,6 +16,13 @@ lh2
     font-size: 30px;
 }
 
+#signupHeader{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 75px;
+}
+
 #emailRow
 {
     display: flex;
