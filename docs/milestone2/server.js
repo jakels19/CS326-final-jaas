@@ -10,6 +10,9 @@ const flash = require('express-flash');
 const session = require('express-session');
 const methodOverride = require('method-override');
 
+const MongoClient = require("mongodb").MongoClient;
+const client = new MongoClient(process.env.DATABASE_URL);
+
 const initializePassport = require('./passport-config');
 initializePassport(
     passport,
