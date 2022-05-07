@@ -63,13 +63,13 @@ If the user clicks on the add expense button, they are brought to the expense pa
 
 /addIncome - brings you to the income page and creates a new income
 
-/updateExpense
+/updateExpense - allows the user to update their expense information
 
-/updateIncome
+/updateIncome - allows the user to update their income information
 
-/removeExpense
+/removeExpense - allows the user to remove any expense information
 
-/removeIncome
+/removeIncome - allows the user to remove any income information
 
 ### Authentication/Authorization
 We used passport as an authentication middleware for node.js in a .env file. This authentication creates a user in the database with their correct username and password. Once authenticated, the user then has full access to the dashboard and all other features on the page. 
