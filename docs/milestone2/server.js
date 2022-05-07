@@ -99,6 +99,13 @@ app.post('/signUp', checkNotAuthenticated,  async (req,res) => {
 });
 
 app.post('/addExpense', checkNotAuthenticated, (req,res) =>{
+    db.collection('budgetUsers').insertOne({
+        product: req.body.productName,
+        date: req.body.date,
+        price: req.body.price,
+        purchase: req.body.methodPurchase
+    })
+    res.redirect('/'); 
 });
 
 app.post('/addIncome', checkAuthenticated, (req,res) => {
@@ -114,6 +121,14 @@ app.post('/addIncome', checkAuthenticated, (req,res) => {
 });
 
 app.put('/updateExpense', (req,res) =>{
+    db.collection('budgetUsers').updateOne({},{
+        $set: {
+            product: req.body.productName,
+            date: req.body.date,
+            price: req.body.price,
+            purchase: req.body.methodPurchase
+        }
+    })
     console.log('item updated');
     res.redirect('/');
 })
@@ -121,6 +136,12 @@ app.put('/updateExpense', (req,res) =>{
 //app.put()
 
 app.delete('/removeExpense', checkAuthenticated, (req,res) => {
+    db.collection('budgetUsers').deleteOne({
+        product: req.body.productName,
+        date: req.body.date,
+        price: req.body.price,
+        purchase: req.body.methodPurchase
+    })
     console.log('item deleted');
     res.redirect('/');
 })
