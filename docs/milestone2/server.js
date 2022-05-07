@@ -2,8 +2,8 @@ if (process.env.NODE_ENV !== 'production'){
     require('dotenv').config();
 }
 
-import { MongoClient } from 'mongodb';
-import 'dotenv/config';
+// const MongoClient =  require('mongodb');
+// require('dotenv/config');
 
 const express = require("express");
 const app = express();
@@ -14,7 +14,7 @@ const session = require('express-session');
 const methodOverride = require('method-override');
 
 const MongoClient = require("mongodb").MongoClient;
-const client = new MongoClient(process.env.DATABASE_URL);
+// const client = new MongoClient(process.env.DATABASE_URL);
 
 const initializePassport = require('./passport-config');
 initializePassport(
@@ -40,12 +40,12 @@ app.use(methodOverride('_method'));
 const users = []; // local database
 
 let db, 
-DB_STRING = "mongodb+srv://123:<123@cluster0.bpmdg.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+DB_STRING = "mongodb+srv://123:123@cluster0.bpmdg.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
 
 MongoClient.connect(DB_STRING, { useUnifiedTopology: true })
     .then(client => {
-        console.log(`Connected to milestone3 Database`)
-        db = client.db('milestone3')
+        console.log(`Connected to milestone3 Database`);
+        db = client.db('milestone3');
     })
 
 
