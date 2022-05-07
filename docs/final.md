@@ -72,6 +72,7 @@ If the user clicks on the add expense button, they are brought to the expense pa
 /removeIncome
 
 ### Authentication/Authorization
+We used passport as an authentication middleware for node.js in a .env file. 
 
 ### Division of Labor
 
