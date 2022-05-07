@@ -76,8 +76,6 @@ Income Document
   amount: Integer
 }
 
-### Division Of Labor
-Abenezer Fesseha
 
 ### URL Routes/Mappings
 
