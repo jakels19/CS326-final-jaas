@@ -53,15 +53,15 @@ If the user clicks on the add expense button, they are brought to the expense pa
 
 ### URL Routes/Mappings
 
-/login
+/login - brings you to the login page and uses authentication permisssions
 
-/signUp
+/signUp - brings you to the signup page and uses authentication permissions
 
-/dashboard
+/dashboard - brings you to the dashboard page after successfully getting through authentication
 
-/addExpense
+/addExpense - brings you to the expense page and creates a new expense
 
-/addIncome
+/addIncome - brings you to the income page and creates a new income
 
 /updateExpense
 
@@ -72,7 +72,7 @@ If the user clicks on the add expense button, they are brought to the expense pa
 /removeIncome
 
 ### Authentication/Authorization
-We used passport as an authentication middleware for node.js in a .env file. 
+We used passport as an authentication middleware for node.js in a .env file. This authentication creates a user in the database with their correct username and password. Once authenticated, the user then has full access to the dashboard and all other features on the page. 
 
 ### Division of Labor
 
