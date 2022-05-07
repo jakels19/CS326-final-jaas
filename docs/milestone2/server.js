@@ -99,7 +99,7 @@ app.post('/signUp', checkNotAuthenticated,  async (req,res) => {
 });
 
 app.post('/addExpense', checkNotAuthenticated, (req,res) =>{
-    db.collection('budgetUsers').insertOne({
+    db.collection('userExpenses').insertOne({
         product: req.body.productName,
         date: req.body.date,
         price: req.body.price,
@@ -112,7 +112,7 @@ app.post('/addIncome', checkAuthenticated, (req,res) => {
     // let postUserName =  JSON.stringify(randomUsername);
     // //let postDate =  JSON.stringify(randomDate);
     // let postNum = JSON.stringify(randomNum); 
-    db.collection('budgetUsers').insertOne({
+    db.collection('userIncome').insertOne({
         product: req.body.Date,
         amount: req.body.Amount
     });
@@ -121,7 +121,7 @@ app.post('/addIncome', checkAuthenticated, (req,res) => {
 });
 
 app.put('/updateExpense', (req,res) =>{
-    db.collection('budgetUsers').updateOne({},{
+    db.collection('userExpenses').updateOne({},{
         $set: {
             product: req.body.productName,
             date: req.body.date,
@@ -136,7 +136,7 @@ app.put('/updateExpense', (req,res) =>{
 //app.put()
 
 app.delete('/removeExpense', checkAuthenticated, (req,res) => {
-    db.collection('budgetUsers').deleteOne({
+    db.collection('userExpenses').deleteOne({
         product: req.body.productName,
         date: req.body.date,
         price: req.body.price,
@@ -147,7 +147,7 @@ app.delete('/removeExpense', checkAuthenticated, (req,res) => {
 });
 
 app.delete('/removeIncome',checkAuthenticated,(req,res) =>{
-    db.collection('budgetUsers').deleteOne({
+    db.collection('userExpenses').deleteOne({
         product: req.body.Date,
         amount: req.body.Amount
     });
