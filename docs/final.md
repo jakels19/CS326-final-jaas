@@ -105,5 +105,7 @@ Jacob Stulgis - Authentication, MongoDB dependency setup
 
 Shaham Zahir - Final write up, back-end functionality 
 
+Abenezer Fesseha - Finished backend logic, milestone3.md, setup and connected MongoDb to our web-app, added Mongo functionality to crud routes
+
 ### Conclusion
 Our experience working on the project was filled with many challenges. We were able to implement information we learned about html, css, javascript, crud, and databases in general to finalize our project. The biggest challenge we faced was tryig to implement crud functionality into our website. Ideally, we would have like to have more of an understanding on how to use bootstrap as well as creating fake data using faker.js.
