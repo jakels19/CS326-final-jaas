@@ -10,12 +10,16 @@ BudgetUsers Document
 
 Expenses Document
 {
-  _id: objectId,
-  product: String,
-  date: date,
-  price: Integer,
-  purchase: String
-  
+  _id: 
+  objectId,
+  product: 
+  String,
+  date:
+  date,
+  price: 
+  Integer,
+  purchase: 
+  String
 }
 
 Income Document
