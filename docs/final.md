@@ -53,15 +53,15 @@ If the user clicks on the add expense button, they are brought to the expense pa
 
 ### URL Routes/Mappings
 
-/login
+/login - brings you to the login page and uses authentication permisssions
 
-/signUp
+/signUp - brings you to the signup page and uses authentication permissions
 
-/dashboard
+/dashboard - brings you to the dashboard page after successfully getting through authentication
 
-/addExpense
+/addExpense - brings you to the expense page and creates a new expense
 
-/addIncome
+/addIncome - brings you to the income page and creates a new income
 
 /updateExpense
 
