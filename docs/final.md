@@ -45,7 +45,6 @@ If the user clicks on the add expense button, they are brought to the expense pa
 
 ### Database
 
-### Documentation
 For our database, we decided to use the NOSQL database mongoDB. We implemented the basic functions that come with mongodb such as insertOne(), deleteOne() and updateOne(). Below is the schema of how our database is modeled by each collection. 
 
 BudgetUsers Document
