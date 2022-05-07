@@ -2,6 +2,9 @@ if (process.env.NODE_ENV !== 'production'){
     require('dotenv').config();
 }
 
+import { MongoClient } from 'mongodb';
+import 'dotenv/config';
+
 const express = require("express");
 const app = express();
 const passport = require('passport');
@@ -35,6 +38,16 @@ app.use(passport.session());
 app.use(methodOverride('_method'));
 
 const users = []; // local database
+
+let db, 
+DB_STRING = "mongodb+srv://123:<123@cluster0.bpmdg.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+
+MongoClient.connect(DB_STRING, { useUnifiedTopology: true })
+    .then(client => {
+        console.log(`Connected to milestone3 Database`)
+        db = client.db('milestone3')
+    })
+
 
 app.post('/login', checkNotAuthenticated, passport.authenticate('local', {
     successRedirect: '/dashboard',
@@ -71,6 +84,7 @@ app.get('/addIncome', checkNotAuthenticated, (req,res) =>{
 app.post('/signUp', checkNotAuthenticated,  async (req,res) => {
     try{
         const hashedPassword = await bcrypt.hash(req.body.password, 10);
+
         users.push({
             username: req.body.username,
             password: hashedPassword
