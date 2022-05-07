@@ -115,7 +115,7 @@ app.post('/addIncome', checkAuthenticated, (req,res) => {
     db.collection('budgetUsers').insertOne({
         product: req.body.Date,
         amount: req.body.Amount
-    })
+    });
     // console.log(postUserName,postNum);
     res.redirect('/'); 
 });
@@ -128,10 +128,10 @@ app.put('/updateExpense', (req,res) =>{
             price: req.body.price,
             purchase: req.body.methodPurchase
         }
-    })
+    });
     console.log('item updated');
     res.redirect('/');
-})
+});
 
 //app.put()
 
@@ -141,12 +141,16 @@ app.delete('/removeExpense', checkAuthenticated, (req,res) => {
         date: req.body.date,
         price: req.body.price,
         purchase: req.body.methodPurchase
-    })
+    });
     console.log('item deleted');
     res.redirect('/');
-})
+});
 
 app.delete('/removeIncome',checkAuthenticated,(req,res) =>{
+    db.collection('budgetUsers').deleteOne({
+        product: req.body.Date,
+        amount: req.body.Amount
+    });
     console.log('income deleted');
     res.redirect('/'); 
 })
