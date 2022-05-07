@@ -100,7 +100,8 @@ Income Document
 We used passport as an authentication middleware for node.js in a .env file. This authentication creates a user in the database with their correct username and password. Once authenticated, the user then has full access to the dashboard and all other features on the page. 
 
 ### Division of Labor
- 
+
+Jacob Stulgis - Authentication, MongoDB dependency setup
 
 ### Conclusion
 Our experience working on the project was filled with many challenges. We were able to implement information we learned about html, css, javascript, crud, and databases in general to finalize our project. The biggest challenge we faced was tryig to implement crud functionality into our website. Ideally, we would have like to have more of an understanding on how to use bootstrap as well as creating fake data using faker.js.
