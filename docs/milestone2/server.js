@@ -84,11 +84,14 @@ app.get('/addIncome', checkNotAuthenticated, (req,res) =>{
 app.post('/signUp', checkNotAuthenticated,  async (req,res) => {
     try{
         const hashedPassword = await bcrypt.hash(req.body.password, 10);
-
-        users.push({
+        db.collection('budgetUsers').insertOne({
             username: req.body.username,
             password: hashedPassword
         })
+        // users.push({
+        //     username: req.body.username,
+        //     password: hashedPassword
+        // })
         res.redirect('/login');
     } catch {
         res.redirect('/signup');
@@ -99,10 +102,14 @@ app.post('/addExpense', checkNotAuthenticated, (req,res) =>{
 });
 
 app.post('/addIncome', checkAuthenticated, (req,res) => {
-    let postUserName =  JSON.stringify(randomUsername);
-    //let postDate =  JSON.stringify(randomDate);
-    let postNum = JSON.stringify(randomNum); 
-    console.log(postUserName,postNum);
+    // let postUserName =  JSON.stringify(randomUsername);
+    // //let postDate =  JSON.stringify(randomDate);
+    // let postNum = JSON.stringify(randomNum); 
+    db.collection('budgetUsers').insertOne({
+        product: req.body.Date,
+        amount: req.body.Amount
+    })
+    // console.log(postUserName,postNum);
     res.redirect('/'); 
 });
 
